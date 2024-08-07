@@ -101,7 +101,7 @@ button[data-color="dark"] {
 .center-both {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 .wrap {
   flex-wrap: wrap;
