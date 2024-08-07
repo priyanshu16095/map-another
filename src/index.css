@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+  /* font-weight: 500; */
+}
+:root {
+  --clr-orange: #6EACDA;
+  --clr-orange: #5ca2d8;
+  --clr-purple: #201E43;
+  --clr-gray: #f5f5f7;
+}
+button, input {
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+input {
+  padding: 1rem;
+  font-weight: bold;
+}
+button {
+  background-color: var(--clr-orange);
+  padding: 1rem;
+  color: white;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: #248bda;
+}
+
+/* BUTTON AND INPUT */
+button[data-color="light"] {
+  background-color: white;
+  color: black;
+}
+button[data-color="dark"] {
+  color: white;
+  background-color: black;
+}
+.input {
+  display: flex;
+  border: 1px solid lightgray;
+  width: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.input__input {
+  border: none;
+}
+.input__icon {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.input__icon:hover {
+  color: white;
+  background-color: black;
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+}
+.flex-h {
+  display: flex;
+  align-items: center;
+}
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+.flex-s {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-e {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-both {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* GAP */
+.gap-xl {
+  gap: 2.5rem;
+}
+.gap-l {
+  gap: 1.5rem;
+}
+.gap {
+  gap: 1rem;
+}
+.gap-s {
+  gap: 0.6rem;
+}
+.gap-xsm {
+  gap: 0.3rem;
+}
+
+/* FONT */
+p {
+  color: #444;
+}
+.font-l {
+  font-size: 1.5rem;
+}
+.font {
+  font-size: 1.1rem;
+}
+.font-s {
+  font-size: 0.9rem;
+}
+.link {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #555;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.link:hover {
+  color: var(--clr-orange);
+}
+.orange {
+  color: var(--clr-orange);
+}
+.primary {
+  color: #555;
+}
+
+/* FONT WEIGHT */
+.bold-xl {
+  font-weight: 700;
+}
+.bold {
+  font-weight: 600;
+}
+
+/* ICON */
+.icon {
+  cursor: pointer;
+}
+.icon-sm {
+  font-size: 1.3rem !important;
+  cursor: pointer;
+}
+.icon[data-color = 'light'], .icon-sm[data-color="light"] {
+  color: white !important;
+}
+
+/* UTILS */
+.cursor {
+  cursor: pointer;
+}
+.padding {
+  padding: 1rem;
+}
+.border {
+  border: 1px solid lightgray;
+}
+.clr-org {
+  color: var(--clr-orange);
+}
+
+/* MEDIA QUERIES */
+.show {
+  display: flex;
+}
+@media all and (max-width: 450px) {
+  .show {
+    display: none !important;
+  }
+}
+@media all and (min-width: 450px) {
+  .hide {
+    display: none !important;
+  }
+}
+
+.scroll {
+  height: 200vh;
+}

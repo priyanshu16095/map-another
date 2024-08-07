@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1.3rem 1rem;
+    transition: all 0.2s;
+}
+.navbar__container {
+    max-width: 70rem;
+    margin: auto;
+}
+.navbar__sticky {
+    padding: 1rem;
+    box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.3);
+}
+.navbar__placeholder {
+    width: 100%;
+    padding: 2.5rem;
+}
+
+.container {
+    max-width: 70rem;
+    margin: auto;
+}
+
+.hero__container {
+    max-width: 40rem;
+    text-align: center;
+    margin: auto;
+}

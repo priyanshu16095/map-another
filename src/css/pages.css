@@ -1,0 +1,9 @@
+.auth__container {
+    text-align: center;
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: white;
+}
+.auth {
+    background-color: #f5f5f7;
+}
